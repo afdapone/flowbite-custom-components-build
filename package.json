@@ -1,0 +1,22 @@
+{
+  "name": "flowbite-custom-components-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "esbuild index.js --bundle --minify --outfile=dist/flowbite-modal.min.js --format=iife",
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o dist/flowbite-modal.css --minify",
+    "build": "npm run build:js && npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "flowbite": "^4.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
