@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:js": "esbuild index.js --bundle --minify --outfile=dist/flowbite-modal.min.js --format=iife",
-    "build:css": "npx @tailwindcss/cli -i src/input.css -o dist/flowbite-modal.css --minify",
+    "build:js": "esbuild index.js --bundle --minify --outfile=dist/flowbite.min.js --format=iife",
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o dist/flowbite.css --minify",
     "build": "npm run build:js && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

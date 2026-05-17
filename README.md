@@ -1,11 +1,11 @@
-# Flowbite Modal Unbundled
+# Flowbite Custom Components Building
 
-This project demonstrates how to unbundle the Flowbite Modal component as a standalone module.
+This project demonstrates how to custom build the Flowbite components as a standalone module.
 
 ## Files
-- `dist/flowbite-modal.min.js`: Standalone JavaScript for the Modal component (8.6kb).
-- `dist/flowbite-modal.css`: Standalone CSS containing only the necessary Tailwind utilities for the Modal (52kb).
-- `src/modal.html`: Example usage of the unbundled component.
+- `dist/flowbite.min.js`: Standalone JavaScript for the components.
+- `dist/flowbite.css`: Standalone CSS containing only the necessary Tailwind utilities for the custom components.
+- `src/index.html`: Example usage of the unbundled component.
 
 ## How to use
 
@@ -13,11 +13,11 @@ This project demonstrates how to unbundle the Flowbite Modal component as a stan
 Add the CSS and JS to your HTML:
 
 ```html
-<link rel="stylesheet" href="path/to/flowbite-modal.css">
-<script src="path/to/flowbite-modal.min.js"></script>
+<link rel="stylesheet" href="path/to/flowbite.min.css">
+<script src="path/to/flowbite.min.js"></script>
 ```
 
-### 2. HTML Structure
+### 2. HTML Structure (Using Modal for example)
 Use the standard Flowbite Modal HTML structure:
 
 ```html
@@ -50,14 +50,14 @@ modal.show();
 ## Build Process
 
 ### JS Build
-We use `esbuild` to bundle only the Modal component from `flowbite/lib/esm/components/modal`. This avoids pulling in the entire library.
+We use `esbuild` to bundle only the custom components i.e. from `flowbite/lib/esm/components/modal`. This avoids pulling in the entire library.
 
 ```bash
 npm run build:js
 ```
 
 ### CSS Build
-We use Tailwind 4 with the `@source` directive to scan only the modal HTML, ensuring the CSS bundle is as small as possible.
+We use Tailwind 4 with the `@source` directive to scan only the custom components HTML, ensuring the CSS bundle is as small as possible.
 
 ```bash
 npm run build:css
