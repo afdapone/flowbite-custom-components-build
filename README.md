@@ -4,7 +4,7 @@ This project demonstrates how to custom build the Flowbite components as a stand
 
 ## Files
 - `dist/flowbite.min.js`: Standalone JavaScript for the components.
-- `dist/flowbite.css`: Standalone CSS containing only the necessary Tailwind utilities for the custom components.
+- `dist/flowbite.min.css`: Standalone CSS containing only the necessary Tailwind utilities for the custom components.
 - `src/index.html`: Example usage of the unbundled component.
 
 ## How to use
