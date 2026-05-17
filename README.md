@@ -62,3 +62,5 @@ We use Tailwind 4 with the `@source` directive to scan only the custom component
 ```bash
 npm run build:css
 ```
+
+[Flowbite Getting Started](https://flowbite.com/docs/getting-started/introduction/)
